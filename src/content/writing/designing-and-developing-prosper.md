@@ -5,8 +5,8 @@ originalDate: 2023-10-16
 tags: [startups, design]
 description: "Two years designing a referral product that worked for its customers, and the ending the original post didn't have."
 canonical: https://medium.com/@ariel_7057/designing-developing-prosper-61ba4075047b
-cover: /images/writing/prosper-widget-laptop.png
-coverAlt: "The Prosper referral widget on a laptop"
+cover: /images/writing/prosper-ui-spec.png
+coverAlt: "Pages from the widget UI specification written for the developers, November 2022"
 draft: false
 ---
 
@@ -54,7 +54,7 @@ That's where the original post ended. "Every product has a period of fast-paced 
 
 Prosper stopped operating in 2024 and was dissolved in 2025.
 
-The product worked. For B Draddy, a golf apparel brand, a 30-day pilot sent 63 referrals, converted 38 of them, and brought in about $6,300 in net revenue at a customer acquisition cost of $1.90. Their CMO said Prosper drove more revenue in 30 days than his old tools had in three years. Across the beta, 86 businesses signed up and roughly a quarter of the discounts given out turned into a sale.
+The product worked. For B Draddy, a golf apparel brand, a 30-day pilot sent 63 referrals, converted 38 of them, and brought in about $6,300 in net revenue at a customer acquisition cost of $1.90. Their CMO said Prosper drove more revenue in 30 days than his old tools had in three years.
 
 Then we went to raise. Months of due diligence with several investors, and in 2024 the only thing anyone wanted to fund was AI. The raise didn't close, and we ran out of money and energy at the same time.
 

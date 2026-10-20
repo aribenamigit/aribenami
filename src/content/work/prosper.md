@@ -9,8 +9,8 @@ areas: [Product, Design, Strategy]
 tags: [startups, design]
 featured: true
 order: 10
-cover: /images/work/prosper/widget-live-takeya-laptop.png
-coverAlt: "The Prosper referral widget live on a Takeya product page"
+cover: /images/work/prosper/shopify-app-store-listing.png
+coverAlt: "Prosper on the Shopify App Store"
 outcomes:
   - { value: "86", label: "businesses in the beta" }
   - { value: "24%", label: "of discounts given converted to a sale" }
@@ -46,7 +46,7 @@ Prosper stopped operating in 2024 after a raise didn't close, and was dissolved 
 
 ## Lesson
 
-The product passed the demand test. The business model didn't: at $25 a month plus 75 cents a referral, a customer who made $6,300 paid us $72. I'd charge for the value from the first customer, and decide early whether the company is a tool business or a venture business instead of running it as both. [More on that in the post.](/writing/designing-and-developing-prosper)
+The product passed the demand test. The business model around it didn't. [I wrote about what I'd do differently.](/writing/designing-and-developing-prosper)
 
 ## Images
 
