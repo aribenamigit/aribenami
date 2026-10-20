@@ -9,8 +9,8 @@ areas: [Product, Design, Strategy]
 tags: [startups, design]
 featured: true
 order: 10
-cover: /images/work/prosper/shopify-app-store-listing.png
-coverAlt: "Prosper on the Shopify App Store"
+cover: /images/work/prosper/widget-v2-hero.png
+coverAlt: "The second Prosper widget, annotated: slider entry, progress bar, sharing options, loading state, reward screen"
 outcomes:
   - { value: "86", label: "businesses in the beta" }
   - { value: "24%", label: "of discounts given converted to a sale" }
@@ -28,7 +28,11 @@ I was the design side of the company: product, brand, website, pitch materials, 
 
 ## What I built
 
-**The widget.** A referral flow that lives anywhere on a page instead of in a pop-up. Verify with a phone number or email, share by text, email or link, get a reward immediately. Shipped as an MVP in October 2022 and redesigned in 2023 after watching customers get stuck on two-factor friction and look-alike screens. The second version added an extended variant with a shorter path to the referral and let the store choose.
+**The widget.** A referral flow that lives anywhere on a page instead of in a pop-up. Verify with a phone number or email, share by text, email or link, get a reward immediately. Shipped as an MVP in October 2022.
+
+**The second widget (2023).** A redesign driven by what we watched customers do with the first one: get stuck on two-factor verification, lose their place between look-alike screens, miss the small buttons. The new version opens with a slider ("WAIT... get $10 off your order!") instead of a panel, shows a progress bar across every step, titles each step, adds Slack, Instagram, Facebook and Reddit to the sharing options, puts a loading state on reward generation, and makes the buttons big. An extended variant gives more context up front with a shorter path to the referral, and the store picks which one to run.
+
+**The rewards architecture.** The reward system underneath both: instant versus deferred rewards, purchase and non-purchase actions, Shopify, static and code-list rewards, custom rewards by webhook, and sender and receiver rewards that fire when the action completes. Drawn so the developers and I were building the same thing.
 
 **The dashboard.** Campaigns, widgets, reports. A widget creator so a store could match its own brand without us touching anything, reward types (Shopify discount, static code, custom), email and SMS templates with backend variables, and a reports page with a date range and referral analytics.
 
@@ -56,6 +60,8 @@ The product passed the demand test. The business model around it didn't. [I wrot
 <figure><img src="/images/work/prosper/widget-copy-reward.png" alt="Copy reward to clipboard state" loading="lazy" /><figcaption>Reward delivered in real time.</figcaption></figure>
 <figure><img src="/images/work/prosper/widget-share-button-shoes.png" alt="Share with a friend button on a shoe product page" loading="lazy" /><figcaption>Native placement on a store's product page.</figcaption></figure>
 <figure><img src="/images/work/prosper/widget-components-spread.png" alt="Widget component variations" loading="lazy" /><figcaption>Widget variants and states.</figcaption></figure>
+<figure><img src="/images/work/prosper/widget-v2-annotated.png" alt="Annotated design of the second widget: slider, tell a friend, set up, loading and reward screens" loading="lazy" /><figcaption>The second widget, annotated.</figcaption></figure>
+<figure><img src="/images/work/prosper/rewards-architecture.png" alt="Rewards architecture diagram: instant and deferred rewards, purchase and non-purchase actions, webhook rewards" loading="lazy" /><figcaption>Rewards architecture.</figcaption></figure>
 <figure><img src="/images/work/prosper/widget-user-flow-2022.jpg" alt="User flow diagram for the MVP widget, October 2022" loading="lazy" /><figcaption>MVP user flow, October 2022.</figcaption></figure>
 <figure><img src="/images/work/prosper/widget-ui-spec-pages.png" alt="Pages from the widget UI specification" loading="lazy" /><figcaption>From the UI spec written for the dev handoff. <a href="/files/prosper-widget-ui-spec-2022.pdf">Full PDF</a>.</figcaption></figure>
 <figure><img src="/images/work/prosper/dashboard-widgets-2023.png" alt="Prosper dashboard, widgets page, 2023" loading="lazy" /><figcaption>Dashboard, 2023.</figcaption></figure>
