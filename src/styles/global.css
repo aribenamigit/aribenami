@@ -1,6 +1,7 @@
 /* Placeholder styling. Ari owns the visual design; this exists so content is readable while it is loaded. */
 :root {
-  --max: 44rem;
+  --max: 72rem;   /* header, footer, galleries */
+  --measure: 44rem; /* text column, centered */
   --fg: #111;
   --muted: #666;
   --rule: #ddd;
@@ -21,14 +22,16 @@ header.site nav a { text-decoration: none; color: var(--muted); }
 header.site nav a[aria-current="page"] { color: var(--fg); }
 header.site nav .btn { border: 1px solid var(--fg); padding: .3rem .7rem; border-radius: .4rem; color: var(--fg); }
 main { padding: 2.5rem 0 4rem; }
+/* Everything in main sits in a centered text column; grids and galleries break out to the full width. */
+main .wrap > *, .prose > * { max-width: var(--measure); margin-left: auto; margin-right: auto; }
+main .wrap > .grid, main .wrap > .gallery, .prose > .gallery, main .wrap > .prose { max-width: none; }
 footer.site { border-top: 1px solid var(--rule); padding: 1.5rem 0; color: var(--muted); font-size: .9rem; }
 footer.site .wrap { display: flex; gap: 1.25rem; flex-wrap: wrap; }
 h1 { font-size: 2rem; line-height: 1.15; margin: 0 0 .5rem; }
 h2 { font-size: 1.35rem; margin: 2rem 0 .5rem; }
 h3 { font-size: 1.05rem; margin: 1.5rem 0 .4rem; }
 .muted { color: var(--muted); }
-.lede { font-size: 1.4rem; line-height: 1.35; font-weight: 300; color: #333; max-width: 36rem; margin: .5rem 0 1.5rem; }
-.prose p, .prose li { max-width: 38rem; }
+.lede { font-size: 1.4rem; line-height: 1.35; font-weight: 300; color: #333; margin: .5rem auto 1.5rem; }
 .prose figure { margin: 1.5rem 0; }
 .prose figcaption { color: var(--muted); font-size: .9rem; margin-top: .4rem; }
 .prose blockquote { border-left: 3px solid var(--rule); margin: 1rem 0; padding: .2rem 1rem; color: #333; }
@@ -60,6 +63,6 @@ dl.skills dd { margin: 0; color: #333; }
 .todo { background: #fff6d6; border: 1px dashed #d6b65a; padding: .5rem .75rem; border-radius: .3rem; font-size: .9rem; }
 .gallery { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); margin: 1.5rem 0; }
 .gallery figure { margin: 0; }
-.gallery img { border: 1px solid var(--rule); border-radius: .3rem; background: #f6f6f6; }
+.gallery img { aspect-ratio: 4/3; width: 100%; object-fit: contain; border: 1px solid var(--rule); border-radius: .3rem; background: #f6f6f6; padding: .5rem; }
 .gallery figcaption { font-size: .85rem; color: var(--muted); margin-top: .35rem; }
 @media (max-width: 600px) { .timeline li { grid-template-columns: 1fr; gap: .2rem; } }
