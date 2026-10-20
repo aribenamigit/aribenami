@@ -1,7 +1,6 @@
 // Site-wide facts. Placeholders are marked TODO; fill before launch.
 export const site = {
   name: 'Ari Ben-Ami',
-  headline: 'Design Engineer',
   tagline: 'Good design is verified by strong demand.',
   subline: 'I design the thing, build the thing, and then run the numbers on whether it worked.',
   email: 'arielbenami7@gmail.com',

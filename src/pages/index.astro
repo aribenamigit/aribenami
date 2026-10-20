@@ -11,7 +11,7 @@ const posts = (await getCollection('writing', ({ data }) => !data.draft))
 const fmt = (d: Date) => d.toLocaleDateString('en-US', { timeZone: 'UTC', year: 'numeric', month: 'short' });
 ---
 <Base>
-  <p class="muted">{site.name}, {site.headline}</p>
+  <p class="muted">{site.name}, {site.location}</p>
   <h1>{site.tagline}</h1>
   <div class="lede">
     <p>A well designed email gets more clicks. Well designed packaging sells more units. A well designed menu gets read; a well designed store gets walked through; a well designed price gets paid without a second thought.</p>
