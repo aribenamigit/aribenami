@@ -39,7 +39,7 @@ Mine end to end. I designed the card layout and the screen system, wrote the Rea
 
 ## Outcome
 
-The screens match the register. Price changes, new drops and sellouts show up on the TVs the same morning without anyone editing a slide. The daily sync is a button press. The same pipeline now feeds the strain cards in the flower case, which is its own case study.
+The screens match the register. Price changes, new drops and sellouts show up on the TVs the same morning without anyone editing a slide. The daily sync is a button press. The same pipeline now feeds the [strain cards in the flower case](/work/gvp-strain-cards).
 
 ## Lesson
 
