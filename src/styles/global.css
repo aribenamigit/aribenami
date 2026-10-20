@@ -1,6 +1,6 @@
 /* Placeholder styling. Ari owns the visual design; this exists so content is readable while it is loaded. */
 :root {
-  --max: 44rem;
+  --max: 72rem;
   --fg: #111;
   --muted: #666;
   --rule: #ddd;
@@ -27,8 +27,8 @@ h1 { font-size: 2rem; line-height: 1.15; margin: 0 0 .5rem; }
 h2 { font-size: 1.35rem; margin: 2rem 0 .5rem; }
 h3 { font-size: 1.05rem; margin: 1.5rem 0 .4rem; }
 .muted { color: var(--muted); }
-.lede { font-size: 1.4rem; line-height: 1.35; font-weight: 300; color: #333; max-width: 36rem; margin: .5rem 0 1.5rem; }
-.prose p, .prose li { max-width: 38rem; }
+.lede { font-size: 1.4rem; line-height: 1.35; font-weight: 300; color: #333; max-width: 44rem; margin: .5rem 0 1.5rem; }
+.prose p, .prose li { max-width: 44rem; }
 .prose figure { margin: 1.5rem 0; }
 .prose figcaption { color: var(--muted); font-size: .9rem; margin-top: .4rem; }
 .prose blockquote { border-left: 3px solid var(--rule); margin: 1rem 0; padding: .2rem 1rem; color: #333; }
