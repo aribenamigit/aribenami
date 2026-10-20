@@ -1,6 +1,6 @@
 ---
 title: "In-store TV menus that update themselves"
-summary: "A React menu app for the dispensary's TV screens, fed by the point-of-sale inventory through a one-click sync script. Live prices, live stock, no one retyping anything."
+summary: "Most dispensary TV menus are a scrolling list nobody reads. This one gives every product a photo and a card, and keeps itself current from the point-of-sale inventory with one click."
 organization: "Grass Valley Provisions"
 role: "Designed and built it: the app, the sync script, the screen layouts. Maintain it daily."
 period: "2024–now"
@@ -19,9 +19,11 @@ outcomes:
 
 ## Context
 
-A dispensary menu changes every day. New strains come in, prices move, things sell out. The TV screens in the store are the menu most customers actually read while they wait, and the usual way to keep them current is someone editing slides in a signage tool by hand, which means they are usually wrong.
+Most dispensary TV menus are a spreadsheet on a screen: a scrolling list of product names and prices that nobody has time to stand and read, so nobody does. The TV is on, and it's ignored.
 
-Grass Valley Provisions runs on Dutchie's point-of-sale system, which has an inventory API. That's the whole opportunity: the screens should read from the same data the register does.
+We wanted the opposite. A menu where every product gets a photo and a card of its own, where one strain looks as prominent as the next, so a customer waiting at the counter can actually use it, or see something they didn't come in for and decide to try it. The screen had to be a tool for the customer, not a feed.
+
+The second problem is keeping it true. A dispensary menu changes every day: new strains, price moves, sellouts. The usual answer is someone editing slides by hand, which means the screen is usually wrong. Grass Valley Provisions runs on Dutchie's point-of-sale system, which has an inventory API, so the screens could read from the same data as the register.
 
 ## Role
 
@@ -41,7 +43,7 @@ The screens match the register. Price changes, new drops and sellouts show up on
 
 ## Lesson
 
-The hard part wasn't the app. It was deciding what not to show: which categories, which fields, which products. A menu is an edit of the inventory, and the filter list in the sync script is where most of the design is.
+A list is cheap to build and nobody reads it. Ten big cards with photos cost more design and more engineering, and people stop and look. The hard part after that was deciding what not to show: which categories, which fields, which products. A menu is an edit of the inventory, and the filter list in the sync script is where most of that design lives.
 
 ## How it fits together
 
