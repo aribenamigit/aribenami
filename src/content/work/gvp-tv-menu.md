@@ -9,8 +9,8 @@ areas: [Product, Design]
 tags: [design, ai, cannabis]
 featured: true
 order: 5
-cover: /images/work/gvp-tv-menu/tv-menu-full-screen.png
-coverAlt: "The TV menu: ten product cards in two columns on a dark screen, with strain type, brand, price and THC"
+cover: /images/work/gvp-tv-menu/tv-menu-three-screens.jpg
+coverAlt: "Three portrait TV screens: flower, flower, concentrates, ten product cards each"
 outcomes:
   - { value: "1 click", label: "to sync the screens to live inventory" }
   - { value: "~550", label: "products in the feed, filtered to what belongs on a screen" }
@@ -29,7 +29,7 @@ Mine end to end. I designed the card layout and the screen system, wrote the Rea
 
 ## What I built
 
-**The menu app.** A React app that reads a JSON file of products and renders them as cards: product photo, name, strain type color-coded (sativa gold, hybrid green, indica blue, with a matching inner glow on the card), category, brand, price, size, THC percentage calculated from potency and weight. Local, OCal and Sun & Earth badges when a product carries those tags. Ten cards per screen, cycling every 20 seconds through the whole catalog, sorted by category and price. Fonts and layout are tuned for a TV read from ten feet away. Styled with SCSS, bundled with webpack, deployed to ScreenCloud through their apps SDK, which is what runs on the actual TVs.
+**The menu app.** A React app that reads a JSON file of products and renders them as cards: product photo, name, strain type color-coded (sativa gold, hybrid green, indica blue, with a matching inner glow on the card), category, brand, price, size, THC percentage calculated from potency and weight. Local, OCal and Sun & Earth badges when a product carries those tags. Ten cards per screen on portrait-mounted TVs, cycling every 20 seconds through the whole catalog, sorted by category and price. Serif for names and prices, condensed sans for the small text, tuned for a screen read from ten feet away. Styled with SCSS, bundled with webpack, deployed to ScreenCloud through their apps SDK, which is what runs on the actual TVs.
 
 **The sync script.** A Python script that pulls the full inventory from the Dutchie POS API, filters out what shouldn't be on a screen (accessories, gift cards, anything under a dollar, anything without a photo, a list of categories we show elsewhere), strips each product down to the eleven fields the app needs, and commits the result as a JSON file to the app's GitHub repo. The app reads that file. No database, no server to keep alive.
 
@@ -65,8 +65,10 @@ The hard part wasn't the app. It was deciding what not to show: which categories
 ## Images
 
 <div class="gallery">
-<figure><img src="/images/work/gvp-tv-menu/tv-menu-full-screen.png" alt="A full menu screen: ten product cards" loading="lazy" /><figcaption>One screen: ten products, cycling every 20 seconds.</figcaption></figure>
-<figure><img src="/images/work/gvp-tv-menu/tv-menu-card-detail.png" alt="Two product cards up close" loading="lazy" /><figcaption>The card: photo, name, strain type, category, brand, price, size, THC.</figcaption></figure>
+<figure><img src="/images/work/gvp-tv-menu/screen-flower-1.jpg" alt="Flower screen with ten strains" loading="lazy" /><figcaption>Flower.</figcaption></figure>
+<figure><img src="/images/work/gvp-tv-menu/screen-flower-2.jpg" alt="Flower screen with local badges" loading="lazy" /><figcaption>Flower, with Local badges on Nevada County growers.</figcaption></figure>
+<figure><img src="/images/work/gvp-tv-menu/screen-concentrates.jpg" alt="Concentrates screen" loading="lazy" /><figcaption>Concentrates.</figcaption></figure>
+<figure><img src="/images/work/gvp-tv-menu/screen-card-detail.jpg" alt="Four product cards up close" loading="lazy" /><figcaption>The card: photo, name, strain type, category, brand, price, size, THC.</figcaption></figure>
 </div>
 
-<!-- GAP: photos of the TVs in the store, a screenshot of the one-click page, and anything on the other screen layouts (promo, sponsorship). -->
+<!-- GAP: photos of the TVs in the store, a screenshot of the one-click page, promo and sponsorship layouts. -->
