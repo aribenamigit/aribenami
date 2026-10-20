@@ -5,8 +5,8 @@ originalDate: 2023-10-16
 tags: [startups, design]
 description: "Two years designing a referral product that worked for its customers, and the ending the original post didn't have."
 canonical: https://medium.com/@ariel_7057/designing-developing-prosper-61ba4075047b
-cover: /images/writing/prosper-ui-spec.png
-coverAlt: "Pages from the widget UI specification written for the developers, November 2022"
+cover: /images/writing/prosper-mvp-to-v2.png
+coverAlt: "The 2022 MVP widget next to the 2023 redesign"
 draft: false
 ---
 
