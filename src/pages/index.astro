@@ -3,9 +3,8 @@ import Base from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { site } from '../data/site';
 
-const work = (await getCollection('work', ({ data }) => !data.draft && data.featured))
-  .sort((a, b) => a.data.order - b.data.order)
-  .slice(0, 3);
+// All case studies are rendered; a small script shows three at random on each visit.
+const work = (await getCollection('work', ({ data }) => !data.draft)).sort((a, b) => a.data.order - b.data.order);
 const posts = (await getCollection('writing', ({ data }) => !data.draft))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .slice(0, 3);
@@ -14,16 +13,16 @@ const fmt = (d: Date) => d.toLocaleDateString('en-US', { timeZone: 'UTC', year: 
 <Base>
   <p class="muted">{site.name}, {site.headline}</p>
   <h1>{site.tagline}</h1>
-  <p class="lede">
-    A well-designed email gets more clicks. Well-designed packaging sells more units.
-    A business model is designed with the same tools and judged by the same test.
-  </p>
+  <div class="lede">
+    <p>A well designed email gets more clicks. Well designed packaging sells more units. A well designed menu gets read; a well designed store gets walked through; a well designed price gets paid without a second thought.</p>
+    <p>The same test applies to things you can't see. A loyalty program is designed. A discount schedule is designed. A business model is designed, with the same tools and the same judgment as a logo, and it gets verified the same way: people want it, or they don't.</p>
+  </div>
   <p>{site.subline}</p>
 
-  <h2>Selected work</h2>
-  <div class="grid">
+  <h2>Jump into my work</h2>
+  <div class="grid" id="work-grid">
     {work.map((cs) => (
-      <a class="card" href={`/work/${cs.id}`}>
+      <a class="card" href={`/work/${cs.id}`} hidden>
         {cs.data.cover && <img class="cover" src={cs.data.cover} alt="" loading="lazy" />}
         <div class="meta">{cs.data.organization} · {cs.data.period}</div>
         <h3>{cs.data.title}</h3>
@@ -31,9 +30,10 @@ const fmt = (d: Date) => d.toLocaleDateString('en-US', { timeZone: 'UTC', year: 
       </a>
     ))}
   </div>
-  <p><a href="/work">All work</a></p>
+  <p><a href="/work">Explore other topics</a></p>
 
   <h2>Writing</h2>
+  <p>This is my corner. I write about whatever I'm thinking about: basketball, chess, watches, investing, and the lessons I pick up at work. Short posts, one idea each.</p>
   <ul class="list">
     {posts.map((p) => (
       <li>
@@ -45,10 +45,22 @@ const fmt = (d: Date) => d.toLocaleDateString('en-US', { timeZone: 'UTC', year: 
   <p><a href="/writing">All writing</a></p>
 
   <h2>What I work on</h2>
-  <p>Design (graphic, product, UX). Marketing and brand strategy. Business strategy and startups. Investing and finance. AI as a working tool.</p>
+  <p>Design: brand systems, packaging and dielines, print, signage, illustration, product and interface design. I've done this for a print manufacturer, a startup I co-founded, a dispensary, and cannabis brands I consult for.</p>
+  <p>Building: I write the code for most of what I design. React apps, Python scripts, Astro sites like this one, tools that read a point-of-sale API and turn it into menus, cards and reports. AI is part of how I build now, the way a second monitor used to be.</p>
+  <p>Marketing and strategy: loyalty programs, discount and pricing strategy, vendor programs, email and SMS, sponsorships, launches. The part of the job where design meets a spreadsheet.</p>
+  <p>Markets: I read macro and company fundamentals the way I read a layout, and I write about it here. No price calls.</p>
 
   <h2>Now</h2>
-  <p>{site.now} <span class="muted">Updated {site.nowUpdated}.</span></p>
+  <p>Marketing Director at Grass Valley Provisions, an independent dispensary in Grass Valley, California, where I own brand, web, the mobile app, pricing and discount strategy, and the analytics on top of the point-of-sale. Advising an early-stage team on brand and product. Building this site in the evenings and loading it with the last six years of work. Working through chess books to get past 1600. <span class="muted">Updated {site.nowUpdated}.</span></p>
 
   <p><a class="btn" href="/contact">Get in touch</a></p>
+
+  <script>
+    const cards = [...document.querySelectorAll<HTMLElement>('#work-grid .card')];
+    for (let i = cards.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [cards[i], cards[j]] = [cards[j], cards[i]];
+    }
+    cards.slice(0, 3).forEach((c) => (c.hidden = false));
+  </script>
 </Base>
