@@ -39,6 +39,7 @@ const fmt = (d: Date) => d.toLocaleDateString('en-US', { timeZone: 'UTC', year: 
       <li>
         <a href={`/writing/${p.id}`}>{p.data.title}</a>
         <div class="muted">{fmt(p.data.date)} · {p.data.description}</div>
+        <a class="more" href={`/writing/${p.id}`}>Read more →</a>
       </li>
     ))}
   </ul>
