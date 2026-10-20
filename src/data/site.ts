@@ -4,8 +4,8 @@ export const site = {
   headline: 'Design Engineer',
   tagline: 'Design is verified by demand.',
   subline: 'I design the thing, build the thing, and then run the numbers on whether it worked.',
-  email: 'TODO@example.com', // TODO: personal email (not gvprovisions.com, not getprosper.io)
-  linkedin: 'https://www.linkedin.com/in/TODO', // TODO
+  email: 'arielbenami7@gmail.com',
+  linkedin: 'https://www.linkedin.com/in/aribenami/',
   github: '', // optional
   location: 'Grass Valley, California',
   now: 'Marketing Director at Grass Valley Provisions. Advising an early-stage team on brand and product. Building this site.', // "Now" block, update monthly
@@ -15,7 +15,7 @@ export const site = {
 export const nav = [
   { href: '/work', label: 'Work' },
   { href: '/writing', label: 'Writing' },
-  { href: '/resume', label: 'Resume' },
+  { href: '/experience', label: 'Experience' },
   // Services is built but unlisted at launch. Add { href: '/services', label: 'Services' } when there is capacity.
   { href: '/about', label: 'About' },
 ];
