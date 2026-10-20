@@ -37,6 +37,10 @@ Everything after the logo. I built the templates, the print system, and the voic
 
 **Visitor sign-in screen.** The brand's angled bars as a screen graphic for the lobby iPad.
 
+**Product mockups.** A printer sells things that don't exist yet, so a lot of the job was photorealism: building the mockup of a product before it was printed. The hotel bedroom below is a composite I made to show a custom wallpaper for a large Las Vegas hotel; the wallpaper in the photo isn't real. Same for most of the product imagery on the sell sheets.
+
+**Sales flyers.** One-page pieces for the sales team, like the digital-plus-screen-printing flyer below.
+
 **The mural.** A line illustration of the company and the town: the Stillwater lift bridge, the presses, the plotter, the delivery truck, the school bus, the CMYK bottles, "Est. 1938." Drawn for a wall and then reused on the holiday card background and on merchandise.
 
 <!-- GAP: mural facts. Where it's installed, how big, who asked for it, and the mug/merch photos. -->
@@ -60,6 +64,8 @@ An identity is a promise; the applications are where it gets kept. Most rebrands
 <figure><img src="/images/work/modernistic/sell-sheet-magnetic.png" alt="Sell sheet for sustainable magnetic receptive graphics" loading="lazy" /><figcaption>Sell sheet: sustainable magnetic receptive.</figcaption></figure>
 <figure><img src="/images/work/modernistic/sustainability-report-cover.png" alt="2022 sustainability report cover and contents" loading="lazy" /><figcaption>2022 Sustainability Report.</figcaption></figure>
 <figure><img src="/images/work/modernistic/sustainability-report-spreads.png" alt="Sustainability report interior spreads" loading="lazy" /><figcaption>Report interior.</figcaption></figure>
+<figure><img src="/images/work/modernistic/wallpaper-mockup-hotel.jpg" alt="Photorealistic mockup of custom printed wallpaper in a hotel bedroom" loading="lazy" /><figcaption>Wallpaper mockup for a Las Vegas hotel. The wallpaper is composited, not photographed.</figcaption></figure>
+<figure><img src="/images/work/modernistic/printing-services-flyer.jpg" alt="Printing services flyer: digital and screen printing" loading="lazy" /><figcaption>Printing services flyer.</figcaption></figure>
 <figure><img src="/images/work/modernistic/mural-illustration.png" alt="Line illustration mural of the Modernistic shop and Stillwater" loading="lazy" /><figcaption>The mural illustration.</figcaption></figure>
 <figure><img src="/images/work/modernistic/holiday-packaging.png" alt="Holiday mailer box dieline and rendered box" loading="lazy" /><figcaption>Holiday packaging, dieline and box.</figcaption></figure>
 <figure><img src="/images/work/modernistic/candle-labels.png" alt="Candle labels in two colorways" loading="lazy" /><figcaption>Candle labels.</figcaption></figure>
