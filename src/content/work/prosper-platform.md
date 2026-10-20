@@ -7,7 +7,7 @@ period: "2023–2024"
 era: "2020–2023"
 areas: [Product, Strategy]
 tags: [startups, design]
-featured: true
+featured: false
 order: 12
 cover: /images/work/prosper-platform/dashboard-campaigns-figma.png
 coverAlt: "Prosper dashboard, campaigns page"
