@@ -14,10 +14,10 @@ const fmt = (d: Date) => d.toLocaleDateString('en-US', { timeZone: 'UTC', year: 
   <p class="muted">{site.name}, {site.location}</p>
   <h1>{site.tagline}</h1>
   <div class="lede">
-    <p>A well designed email gets more clicks. Well designed packaging sells more units. A well designed menu gets read; a well designed store gets walked through; a well designed price gets paid without a second thought.</p>
+    <p>A well designed email gets more clicks. Well designed packaging sells more units. A well designed menu gets read. A well designed store gets walked through. A well designed price gets paid without a second thought.</p>
     <p>The same test applies to things you can't see. A loyalty program is designed. A discount schedule is designed. A business model is designed, with the same tools and the same judgment as a logo, and it gets verified the same way: people want it, or they don't.</p>
+    <p>{site.subline}</p>
   </div>
-  <p>{site.subline}</p>
 
   <h2>Jump into my work</h2>
   <div class="grid" id="work-grid">
@@ -33,7 +33,7 @@ const fmt = (d: Date) => d.toLocaleDateString('en-US', { timeZone: 'UTC', year: 
   <p><a href="/work">Explore other topics</a></p>
 
   <h2>Writing</h2>
-  <p>This is my corner. I write about whatever I'm thinking about: basketball, chess, watches, investing, and the lessons I pick up at work. Short posts, one idea each.</p>
+  <p>This is my corner. I write about whatever I'm thinking about: design, business, chess, investing, mechanical watches, NBA basketball, cannabis in California, and the lessons I pick up at work. Short posts, one idea each.</p>
   <ul class="list">
     {posts.map((p) => (
       <li>
@@ -46,13 +46,10 @@ const fmt = (d: Date) => d.toLocaleDateString('en-US', { timeZone: 'UTC', year: 
   <p><a href="/writing">All writing</a></p>
 
   <h2>What I work on</h2>
-  <p>Design: brand systems, packaging and dielines, print, signage, illustration, product and interface design. I've done this for a print manufacturer, a startup I co-founded, a dispensary, and cannabis brands I consult for.</p>
-  <p>Building: I write the code for most of what I design. React apps, Python scripts, Astro sites like this one, tools that read a point-of-sale API and turn it into menus, cards and reports. AI is part of how I build now, the way a second monitor used to be.</p>
-  <p>Marketing and strategy: loyalty programs, discount and pricing strategy, vendor programs, email and SMS, sponsorships, launches. The part of the job where design meets a spreadsheet.</p>
-  <p>Markets: I read macro and company fundamentals the way I read a layout, and I write about it here. No price calls.</p>
+  <p>Design, mostly: brand, packaging, print, interfaces. I build a lot of what I design, so there's code in here too. And since I run marketing for a living, the pricing, programs and numbers behind the design show up as much as the design itself.</p>
 
   <h2>Now</h2>
-  <p>Marketing Director at Grass Valley Provisions, an independent dispensary in Grass Valley, California, where I own brand, web, the mobile app, pricing and discount strategy, and the analytics on top of the point-of-sale. Advising an early-stage team on brand and product. Building this site in the evenings and loading it with the last six years of work. Working through chess books to get past 1600. <span class="muted">Updated {site.nowUpdated}.</span></p>
+  <p>Running marketing for a dispensary in the Sierra foothills. Helping a few early-stage teams with brand and product on the side. Building this site at night and slowly moving six years of work into it. Reading chess books and losing to people rated 1600 anyway. <span class="muted">Updated {site.nowUpdated}.</span></p>
 
   <p><a class="btn" href="/contact">Get in touch</a></p>
 
