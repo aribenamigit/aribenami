@@ -1,0 +1,23 @@
+---
+import Base from '../layouts/Base.astro';
+// Built but unlisted at launch: not in the nav, noindex. Add to nav in src/data/site.ts when there is capacity.
+const offers = [
+  { title: 'Brand and packaging', who: 'Cannabis brands, consumer products', proof: [{ href: '/work/prosper', label: 'Prosper brand' }] },
+  { title: 'Product and UX design', who: 'Early-stage teams, operators replacing a bad tool', proof: [{ href: '/work/prosper', label: 'Prosper' }] },
+  { title: 'Marketing systems', who: 'Retail and e-commerce businesses', proof: [] },
+  { title: 'Retail analytics and pricing strategy', who: 'Dispensaries and specialty retail on Dutchie or a similar POS', proof: [] },
+];
+---
+<Base title="Services" description="Consulting: brand and packaging, product and UX, marketing systems, retail analytics and pricing." noindex>
+  <h1>Services</h1>
+  <p class="lede">Four things I do for other people's businesses. No prices here; the first step is a conversation.</p>
+  {offers.map((o) => (
+    <section>
+      <h2>{o.title}</h2>
+      <p class="muted">For: {o.who}</p>
+      {o.proof.length > 0 && <p>Proof: {o.proof.map((p, i) => <>{i > 0 && ', '}<a href={p.href}>{p.label}</a></>)}</p>}
+    </section>
+  ))}
+  <p>I'm also open to full-time roles in design, product or marketing.</p>
+  <p><a class="btn" href="/contact">Start a conversation</a></p>
+</Base>

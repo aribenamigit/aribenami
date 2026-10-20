@@ -1,0 +1,65 @@
+/* Placeholder styling. Ari owns the visual design; this exists so content is readable while it is loaded. */
+:root {
+  --max: 44rem;
+  --fg: #111;
+  --muted: #666;
+  --rule: #ddd;
+  --bg: #fff;
+  --accent: #111;
+}
+* { box-sizing: border-box; }
+html { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.55; color: var(--fg); background: var(--bg); }
+body { margin: 0; }
+a { color: inherit; }
+img { max-width: 100%; height: auto; display: block; }
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 1rem; }
+header.site { padding: 1.25rem 0; border-bottom: 1px solid var(--rule); }
+header.site .wrap { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+header.site .logo { font-weight: 700; text-decoration: none; }
+header.site nav { display: flex; gap: 1rem; align-items: center; }
+header.site nav a { text-decoration: none; color: var(--muted); }
+header.site nav a[aria-current="page"] { color: var(--fg); }
+header.site nav .btn { border: 1px solid var(--fg); padding: .3rem .7rem; border-radius: .4rem; color: var(--fg); }
+main { padding: 2.5rem 0 4rem; }
+footer.site { border-top: 1px solid var(--rule); padding: 1.5rem 0; color: var(--muted); font-size: .9rem; }
+footer.site .wrap { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+h1 { font-size: 2rem; line-height: 1.15; margin: 0 0 .5rem; }
+h2 { font-size: 1.35rem; margin: 2rem 0 .5rem; }
+h3 { font-size: 1.05rem; margin: 1.5rem 0 .4rem; }
+.muted { color: var(--muted); }
+.lede { font-size: 1.15rem; }
+.prose p, .prose li { max-width: 38rem; }
+.prose figure { margin: 1.5rem 0; }
+.prose figcaption { color: var(--muted); font-size: .9rem; margin-top: .4rem; }
+.prose blockquote { border-left: 3px solid var(--rule); margin: 1rem 0; padding: .2rem 1rem; color: #333; }
+.grid { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); }
+.card { border: 1px solid var(--rule); border-radius: .5rem; padding: 1rem; text-decoration: none; display: block; }
+.card:hover { border-color: var(--fg); }
+.card h3 { margin: .25rem 0; }
+.card .meta { font-size: .85rem; color: var(--muted); }
+.cover { aspect-ratio: 16/10; object-fit: cover; border-radius: .3rem; margin-bottom: .6rem; background: #f3f3f3; }
+.tags { display: flex; gap: .4rem; flex-wrap: wrap; margin: .5rem 0; }
+.tag { font-size: .75rem; border: 1px solid var(--rule); border-radius: 1rem; padding: .1rem .55rem; color: var(--muted); text-decoration: none; }
+.stats { display: flex; gap: 2rem; flex-wrap: wrap; margin: 1.5rem 0; }
+.stats div { min-width: 7rem; }
+.stats strong { display: block; font-size: 1.6rem; line-height: 1.1; }
+.stats span { color: var(--muted); font-size: .85rem; }
+.filters { display: flex; gap: .5rem; flex-wrap: wrap; margin: 1rem 0 2rem; }
+.filters button { border: 1px solid var(--rule); background: none; padding: .3rem .75rem; border-radius: 1rem; cursor: pointer; font: inherit; }
+.filters button[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+.list { list-style: none; padding: 0; margin: 0; }
+.list li { padding: 1rem 0; border-bottom: 1px solid var(--rule); }
+.list li a { text-decoration: none; font-weight: 600; }
+.timeline { list-style: none; padding: 0; margin: 0; }
+.timeline li { display: grid; grid-template-columns: 7rem 1fr; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--rule); }
+.timeline .years { color: var(--muted); }
+.timeline p { margin: .3rem 0 0; }
+dl.skills div { margin: .75rem 0; }
+dl.skills dt { font-weight: 600; }
+dl.skills dd { margin: 0; color: #333; }
+.todo { background: #fff6d6; border: 1px dashed #d6b65a; padding: .5rem .75rem; border-radius: .3rem; font-size: .9rem; }
+.gallery { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); margin: 1.5rem 0; }
+.gallery figure { margin: 0; }
+.gallery img { border: 1px solid var(--rule); border-radius: .3rem; background: #f6f6f6; }
+.gallery figcaption { font-size: .85rem; color: var(--muted); margin-top: .35rem; }
+@media (max-width: 600px) { .timeline li { grid-template-columns: 1fr; gap: .2rem; } }

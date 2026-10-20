@@ -1,0 +1,50 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { AREAS, ERAS } from '../../content.config';
+
+const all = (await getCollection('work', ({ data }) => !data.draft)).sort((a, b) => a.data.order - b.data.order);
+---
+<Base title="Work" description="Case studies: design, product, marketing, strategy and analytics work, 2020 to now.">
+  <h1>Work</h1>
+  <p class="lede">Grouped by what the work was. The toggle narrows it to when.</p>
+
+  <div class="filters" role="group" aria-label="Era">
+    <button type="button" data-era="all" aria-pressed="true">All</button>
+    {ERAS.map((era) => <button type="button" data-era={era} aria-pressed="false">{era}</button>)}
+  </div>
+
+  {AREAS.map((area) => {
+    const items = all.filter((cs) => cs.data.areas.includes(area));
+    if (!items.length) return null;
+    return (
+      <section data-area={area}>
+        <h2>{area}</h2>
+        <div class="grid">
+          {items.map((cs) => (
+            <a class="card" href={`/work/${cs.id}`} data-era={cs.data.era}>
+              {cs.data.cover && <img class="cover" src={cs.data.cover} alt="" loading="lazy" />}
+              <div class="meta">{cs.data.organization} · {cs.data.period}</div>
+              <h3>{cs.data.title}</h3>
+              <p class="muted">{cs.data.summary}</p>
+            </a>
+          ))}
+        </div>
+      </section>
+    );
+  })}
+
+  <script>
+    const buttons = document.querySelectorAll<HTMLButtonElement>('.filters button');
+    const cards = document.querySelectorAll<HTMLElement>('.card[data-era]');
+    const sections = document.querySelectorAll<HTMLElement>('section[data-area]');
+    buttons.forEach((b) =>
+      b.addEventListener('click', () => {
+        const era = b.dataset.era;
+        buttons.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+        cards.forEach((c) => (c.hidden = era !== 'all' && c.dataset.era !== era));
+        sections.forEach((s) => (s.hidden = ![...s.querySelectorAll<HTMLElement>('.card')].some((c) => !c.hidden)));
+      }),
+    );
+  </script>
+</Base>

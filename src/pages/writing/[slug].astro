@@ -1,0 +1,26 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('writing', ({ data }) => !data.draft);
+  return entries.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+const fmt = (x: Date) => x.toLocaleDateString('en-US', { timeZone: 'UTC', year: 'numeric', month: 'long', day: 'numeric' });
+---
+<Base title={d.title} description={d.description}>
+  <p class="muted">
+    {fmt(d.date)}
+    {d.originalDate && <> · first published {fmt(d.originalDate)}</>}
+  </p>
+  <h1>{d.title}</h1>
+  <div class="tags">{d.tags.map((t) => <a class="tag" href={`/writing?tag=${t}`}>{t}</a>)}</div>
+  <article class="prose">
+    <Content />
+  </article>
+  {d.canonical && <p class="muted">Also on <a href={d.canonical}>Medium</a>.</p>}
+  <p><a href="/writing">← All writing</a></p>
+</Base>

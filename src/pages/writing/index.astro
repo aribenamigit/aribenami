@@ -1,0 +1,42 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { TAGS } from '../../content.config';
+
+const posts = (await getCollection('writing', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
+const fmt = (d: Date) => d.toLocaleDateString('en-US', { timeZone: 'UTC', year: 'numeric', month: 'long', day: 'numeric' });
+---
+<Base title="Writing" description="Posts on design, marketing, strategy, startups, investing and AI as a working tool.">
+  <h1>Writing</h1>
+  <p class="lede">Short posts, one idea each.</p>
+
+  <div class="filters" role="group" aria-label="Tag">
+    <button type="button" data-tag="all" aria-pressed="true">All</button>
+    {TAGS.map((t) => <button type="button" data-tag={t} aria-pressed="false">{t}</button>)}
+  </div>
+
+  <ul class="list">
+    {posts.map((p) => (
+      <li data-tags={p.data.tags.join(' ')}>
+        <a href={`/writing/${p.id}`}>{p.data.title}</a>
+        <div class="muted">{fmt(p.data.date)}</div>
+        <div>{p.data.description}</div>
+        <div class="tags">{p.data.tags.map((t) => <span class="tag">{t}</span>)}</div>
+      </li>
+    ))}
+  </ul>
+
+  <script>
+    const buttons = document.querySelectorAll<HTMLButtonElement>('.filters button');
+    const items = document.querySelectorAll<HTMLElement>('.list li[data-tags]');
+    const apply = (tag: string) => {
+      buttons.forEach((x) => x.setAttribute('aria-pressed', String(x.dataset.tag === tag)));
+      items.forEach((li) => (li.hidden = tag !== 'all' && !(li.dataset.tags ?? '').split(' ').includes(tag)));
+    };
+    buttons.forEach((b) => b.addEventListener('click', () => apply(b.dataset.tag ?? 'all')));
+    const initial = new URLSearchParams(location.search).get('tag');
+    if (initial) apply(initial);
+  </script>
+</Base>

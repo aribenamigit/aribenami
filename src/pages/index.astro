@@ -1,0 +1,54 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { site } from '../data/site';
+
+const work = (await getCollection('work', ({ data }) => !data.draft && data.featured))
+  .sort((a, b) => a.data.order - b.data.order)
+  .slice(0, 3);
+const posts = (await getCollection('writing', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 3);
+const fmt = (d: Date) => d.toLocaleDateString('en-US', { timeZone: 'UTC', year: 'numeric', month: 'short' });
+---
+<Base>
+  <p class="muted">{site.name}, {site.headline}</p>
+  <h1>{site.tagline}</h1>
+  <p class="lede">
+    A well-designed email gets more clicks. Well-designed packaging sells more units.
+    A business model is designed with the same tools and judged by the same test.
+  </p>
+  <p>{site.subline}</p>
+
+  <h2>Selected work</h2>
+  <div class="grid">
+    {work.map((cs) => (
+      <a class="card" href={`/work/${cs.id}`}>
+        {cs.data.cover && <img class="cover" src={cs.data.cover} alt="" loading="lazy" />}
+        <div class="meta">{cs.data.organization} · {cs.data.period}</div>
+        <h3>{cs.data.title}</h3>
+        <p class="muted">{cs.data.summary}</p>
+      </a>
+    ))}
+  </div>
+  <p><a href="/work">All work</a></p>
+
+  <h2>Writing</h2>
+  <ul class="list">
+    {posts.map((p) => (
+      <li>
+        <a href={`/writing/${p.id}`}>{p.data.title}</a>
+        <div class="muted">{fmt(p.data.date)} · {p.data.description}</div>
+      </li>
+    ))}
+  </ul>
+  <p><a href="/writing">All writing</a></p>
+
+  <h2>What I work on</h2>
+  <p>Design (graphic, product, UX). Marketing and brand strategy. Business strategy and startups. Investing and finance. AI as a working tool.</p>
+
+  <h2>Now</h2>
+  <p>{site.now} <span class="muted">Updated {site.nowUpdated}.</span></p>
+
+  <p><a class="btn" href="/contact">Get in touch</a></p>
+</Base>

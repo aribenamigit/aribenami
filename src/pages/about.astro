@@ -1,0 +1,24 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../data/site';
+---
+<Base title="About" description="Who Ari Ben-Ami is: Israel, Wisconsin, California, design, code, markets, basketball, watches, chess.">
+  <h1>About</h1>
+  <p class="todo">TODO: headshot and one candid working photo.</p>
+
+  <p class="lede">I'm a designer who learned to code so my designs would ship the way I drew them, and who now spends as much time in spreadsheets as in Figma.</p>
+
+  <p>I grew up in Israel until I was 13. In 2013 my family moved to Madison, Wisconsin, where I went to high school and met Dylan, who later became my co-founder. I studied graphic design and interactive media at UW-Stout, started a clothing brand while I was there, and took my first design job at a print manufacturer in Minnesota during their rebrand.</p>
+
+  <p>After school I moved to Grass Valley, California, so Dylan and I could build Prosper in the same room. Prosper was a referral-marketing product for Shopify stores. It worked for its customers and it didn't survive the 2024 funding market. <a href="/writing/designing-and-developing-prosper">I wrote about what I'd do differently.</a></p>
+
+  <p>Today I'm the Marketing Director at Grass Valley Provisions, an independent cannabis dispensary, where I own brand, web, the mobile app, pricing and discount strategy, and the analytics layer I built on top of the point-of-sale system. I also consult on brand and packaging for cannabis brands and advise an early-stage team.</p>
+
+  <p>I've lived about half my life in each country. I think in systems, I like a layout and a balance sheet for the same reason, and I use AI the way I once used a second monitor: all day, as a tool.</p>
+
+  <h2>Off the clock</h2>
+  <p>NBA, mechanical watches, and chess, which I've played on and off for about four years. Game rating somewhere around 1500 to 1600, and I'm working through books to get better.</p>
+
+  <h2>Now</h2>
+  <p>{site.now} <span class="muted">Updated {site.nowUpdated}.</span></p>
+</Base>
