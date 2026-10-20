@@ -68,7 +68,8 @@ The hard part wasn't the app. It was deciding what not to show: which categories
 <figure><img src="/images/work/gvp-tv-menu/screen-flower-1.jpg" alt="Flower screen with ten strains" loading="lazy" /><figcaption>Flower.</figcaption></figure>
 <figure><img src="/images/work/gvp-tv-menu/screen-flower-2.jpg" alt="Flower screen with local badges" loading="lazy" /><figcaption>Flower, with Local badges on Nevada County growers.</figcaption></figure>
 <figure><img src="/images/work/gvp-tv-menu/screen-concentrates.jpg" alt="Concentrates screen" loading="lazy" /><figcaption>Concentrates.</figcaption></figure>
+<figure><img src="/images/work/gvp-tv-menu/sync-three-states.png" alt="The one-click sync page: ready, running, done" loading="lazy" /><figcaption>The one-click sync page: Ready, Running, Script executed successfully.</figcaption></figure>
 <figure><img src="/images/work/gvp-tv-menu/screen-card-detail.jpg" alt="Four product cards up close" loading="lazy" /><figcaption>The card: photo, name, strain type, category, brand, price, size, THC.</figcaption></figure>
 </div>
 
-<!-- GAP: photos of the TVs in the store, a screenshot of the one-click page, promo and sponsorship layouts. -->
+<!-- GAP: photos of the TVs in the store, promo and sponsorship layouts. -->
