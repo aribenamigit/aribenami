@@ -5,6 +5,8 @@ originalDate: 2023-10-16
 tags: [startups, design]
 description: "Two years designing a referral product that worked for its customers, and the ending the original post didn't have."
 canonical: https://medium.com/@ariel_7057/designing-developing-prosper-61ba4075047b
+cover: /images/writing/prosper-widget-laptop.png
+coverAlt: "The Prosper referral widget on a laptop"
 draft: false
 ---
 

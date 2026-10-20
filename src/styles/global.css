@@ -1,7 +1,6 @@
 /* Placeholder styling. Ari owns the visual design; this exists so content is readable while it is loaded. */
 :root {
-  --max: 72rem;   /* header, footer, galleries */
-  --measure: 44rem; /* text column, centered */
+  --max: 72rem;
   --fg: #111;
   --muted: #666;
   --rule: #ddd;
@@ -22,16 +21,14 @@ header.site nav a { text-decoration: none; color: var(--muted); }
 header.site nav a[aria-current="page"] { color: var(--fg); }
 header.site nav .btn { border: 1px solid var(--fg); padding: .3rem .7rem; border-radius: .4rem; color: var(--fg); }
 main { padding: 2.5rem 0 4rem; }
-/* Everything in main sits in a centered text column; grids and galleries break out to the full width. */
-main .wrap > *, .prose > * { max-width: var(--measure); margin-left: auto; margin-right: auto; }
-main .wrap > .grid, main .wrap > .gallery, .prose > .gallery, main .wrap > .prose { max-width: none; }
+.hero { width: 100%; aspect-ratio: 2/1; object-fit: cover; border-radius: .5rem; margin: 1.5rem 0 2.5rem; background: #f3f3f3; }
 footer.site { border-top: 1px solid var(--rule); padding: 1.5rem 0; color: var(--muted); font-size: .9rem; }
 footer.site .wrap { display: flex; gap: 1.25rem; flex-wrap: wrap; }
 h1 { font-size: 2rem; line-height: 1.15; margin: 0 0 .5rem; }
 h2 { font-size: 1.35rem; margin: 2rem 0 .5rem; }
 h3 { font-size: 1.05rem; margin: 1.5rem 0 .4rem; }
 .muted { color: var(--muted); }
-.lede { font-size: 1.4rem; line-height: 1.35; font-weight: 300; color: #333; margin: .5rem auto 1.5rem; }
+.lede { font-size: 1.4rem; line-height: 1.35; font-weight: 300; color: #333; margin: .5rem 0 1.5rem; }
 .prose figure { margin: 1.5rem 0; }
 .prose figcaption { color: var(--muted); font-size: .9rem; margin-top: .4rem; }
 .prose blockquote { border-left: 3px solid var(--rule); margin: 1rem 0; padding: .2rem 1rem; color: #333; }

@@ -9,7 +9,8 @@ areas: [Design]
 tags: [design]
 featured: true
 order: 20
-cover: /images/work/modernistic/holiday-packaging.png
+cover: /images/work/modernistic/wallpaper-mockup-hotel.jpg
+coverAlt: "Photorealistic mockup of custom printed wallpaper in a hotel bedroom"
 outcomes: []
 ---
 

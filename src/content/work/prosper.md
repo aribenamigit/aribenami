@@ -10,6 +10,7 @@ tags: [startups, design]
 featured: true
 order: 10
 cover: /images/work/prosper/widget-live-takeya-laptop.png
+coverAlt: "The Prosper referral widget live on a Takeya product page"
 outcomes:
   - { value: "86", label: "businesses in the beta" }
   - { value: "24%", label: "of discounts given converted to a sale" }

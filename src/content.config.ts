@@ -19,6 +19,7 @@ const work = defineCollection({
     featured: z.boolean().default(false),
     order: z.number().default(100),
     cover: z.string().optional(),
+    coverAlt: z.string().optional(),
     outcomes: z.array(z.object({ value: z.string(), label: z.string() })).default([]),
     draft: z.boolean().default(false),
   }),
@@ -33,6 +34,8 @@ const writing = defineCollection({
     originalDate: z.coerce.date().optional(),
     tags: z.array(z.enum(TAGS)).min(1),
     canonical: z.string().url().optional(),
+    cover: z.string().optional(),
+    coverAlt: z.string().optional(),
     draft: z.boolean().default(false),
   }),
 });

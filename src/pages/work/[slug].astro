@@ -25,6 +25,7 @@ const d = entry.data;
   <div class="tags">
     {d.tags.map((t) => <a class="tag" href={`/writing?tag=${t}`}>{t}</a>)}
   </div>
+  {d.cover && <img class="hero" src={d.cover} alt={d.coverAlt ?? ""} />}
   <article class="prose">
     <Content />
   </article>
