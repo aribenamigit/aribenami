@@ -9,8 +9,8 @@ areas: [Product, Design]
 tags: [design, ai, cannabis]
 featured: true
 order: 5
-cover: /images/work/gvp-tv-menu/tv-menu-three-screens.jpg
-coverAlt: "Three portrait TV screens: flower, flower, concentrates, ten product cards each"
+cover: /images/work/gvp-tv-menu/in-store-wide.jpg
+coverAlt: "The TV menu mounted in a wood frame behind the counter at Grass Valley Provisions"
 outcomes:
   - { value: "1 click", label: "to sync the screens to live inventory" }
   - { value: "~550", label: "products in the feed, filtered to what belongs on a screen" }
@@ -65,6 +65,8 @@ The hard part wasn't the app. It was deciding what not to show: which categories
 ## Images
 
 <div class="gallery">
+<figure><img src="/images/work/gvp-tv-menu/in-store.jpg" alt="The menu screen in the store, framed in oak behind the counter" loading="lazy" /><figcaption>In the store: a portrait screen in an oak frame behind the counter.</figcaption></figure>
+<figure><img src="/images/work/gvp-tv-menu/tv-menu-three-screens.jpg" alt="Three screens: flower, flower, concentrates" loading="lazy" /><figcaption>Three screens in the rotation.</figcaption></figure>
 <figure><img src="/images/work/gvp-tv-menu/screen-flower-1.jpg" alt="Flower screen with ten strains" loading="lazy" /><figcaption>Flower.</figcaption></figure>
 <figure><img src="/images/work/gvp-tv-menu/screen-flower-2.jpg" alt="Flower screen with local badges" loading="lazy" /><figcaption>Flower, with Local badges on Nevada County growers.</figcaption></figure>
 <figure><img src="/images/work/gvp-tv-menu/screen-concentrates.jpg" alt="Concentrates screen" loading="lazy" /><figcaption>Concentrates.</figcaption></figure>
@@ -72,4 +74,4 @@ The hard part wasn't the app. It was deciding what not to show: which categories
 <figure><img src="/images/work/gvp-tv-menu/screen-card-detail.jpg" alt="Four product cards up close" loading="lazy" /><figcaption>The card: photo, name, strain type, category, brand, price, size, THC.</figcaption></figure>
 </div>
 
-<!-- GAP: photos of the TVs in the store, promo and sponsorship layouts. -->
+<!-- GAP: promo and sponsorship layouts, if worth showing. -->
