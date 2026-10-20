@@ -9,7 +9,7 @@ areas: [Product, Design]
 tags: [startups, design]
 featured: true
 order: 10
-cover: /images/work/prosper-widget/widget-v2-figma-all.png
+cover: /images/work/prosper-widget/widget-v2-hero.png
 coverAlt: "Every screen of the second Prosper widget, compact and extended versions, from the Figma file"
 outcomes:
   - { value: "20 sec", label: "share to reward" }
