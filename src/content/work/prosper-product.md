@@ -19,7 +19,9 @@ outcomes:
 
 ## Context
 
-Every referral tool we looked at in 2021 lived in a pop-up and asked the customer to create an account, download an app, or wait for a friend to buy. Prosper's bet was that a referral should take twenty seconds and happen where the customer already is: on the product page, in the cart, after checkout.
+In 2020 I ran a clothing brand while I was still in school. We learned fast that digital ads rarely paid for themselves. Ad costs had been climbing for years, and most small brands spend on them anyway because there's no obvious alternative. Word of mouth worked better than ads. There was just no easy way for a company to run it or track it.
+
+Every referral tool we looked at in 2021 seemed built ten years earlier. Each one lived in a pop-up and asked the customer to create an account, download an app, or wait for a friend to buy. Prosper's bet was that a referral should take twenty seconds and happen where the customer already is: on the product page, in the cart, after checkout.
 
 That's the shopper's half. The store's half is everything that has to exist so the shopper's half can run on a site we've never seen: a dashboard, a rewards model, a Shopify app. For the first months we deployed by hand. The second half of the company was spent making that unnecessary.
 
@@ -49,7 +51,21 @@ Deployed on B Draddy, Fairway & Greene, Takeya, Thermoflask, Home Means Nevada, 
 
 ## Lesson
 
-The first widget was designed from what I thought a referral should be. The second was designed from watching people get stuck in the first, and it took a year of shipping to earn it. The dashboard is what turned a service into a product. What happened to the company after that is [a different story](/writing/designing-and-developing-prosper).
+The first widget was designed from what I thought a referral should be. The second was designed from watching people get stuck in the first, and it took a year of shipping to earn it. The dashboard is what turned a service into a product.
+
+## The ending
+
+Prosper stopped operating in 2024 and was dissolved in 2025.
+
+The product worked. Then we went to raise. Months of due diligence with several investors, and in 2024 the only thing anyone wanted to fund was AI. The raise didn't close, and we ran out of money and energy at the same time.
+
+That's the true story, and for a long time it was the only story I told. Here's what I'd do differently.
+
+**Charge for the value, not the event.** Our pricing was $25 a month plus 75 cents per referral. B Draddy made $6,300 in a month and paid us about $72. We designed a product that created real value and captured almost none of it, and we called that "risk-free pricing." I'd put a real price on it from the first customer. Ten customers at $500 a month would have told us more than 86 at $25.
+
+**Decide early what kind of company it is.** At that price Prosper was a tool business. We raised like a venture business. Either could have worked: a small, profitable tool that didn't need anyone's permission, or a venture company priced to grow into its round. Doing both at once is what killed it, more than the market did.
+
+Design is verified by demand. The widget passed that test. The business model around it didn't, and I'm the one who designed both.
 
 ## Images
 

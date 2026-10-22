@@ -26,7 +26,7 @@ Designers who think their job ends at the interface are leaving the most importa
 
 ## Necessary, not sufficient
 
-I know this because I designed both halves of a startup and only one passed. The product was verified by demand: stores installed it, customers used it, referrals converted. The pricing never was, because we never put a real price in front of a customer and watched what happened. [That story is here.](/writing/designing-and-developing-prosper) Passing the demand test on the product and skipping it on the business model is how a product that worked ends up as a company that didn't.
+I know this because I designed both halves of a startup and only one passed. The product was verified by demand: stores installed it, customers used it, referrals converted. The pricing never was, because we never put a real price in front of a customer and watched what happened. [That story is here.](/work/prosper-product) Passing the demand test on the product and skipping it on the business model is how a product that worked ends up as a company that didn't.
 
 ## What I do now
 
