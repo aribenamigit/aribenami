@@ -56,6 +56,7 @@ h3 { font-size: 1.05rem; margin: 1.5rem 0 .4rem; }
 .more { display: inline-block; margin-top: .5rem; font-size: .9rem; text-decoration: none; border-bottom: 1px solid var(--fg); font-weight: 500; }
 .timeline { list-style: none; padding: 0; margin: 0; }
 .timeline li { display: grid; grid-template-columns: 7rem 1fr; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--rule); }
+.timeline li:last-child, .list li:last-child { border-bottom: none; }
 .timeline .years { color: var(--muted); }
 .timeline p { margin: .3rem 0 0; }
 dl.skills div { margin: .75rem 0; }
