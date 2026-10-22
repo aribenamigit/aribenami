@@ -83,9 +83,9 @@ The 2023 version was dark. The 2024 version went light and simpler.
 <figure><img src="/images/work/prosper-platform/dashboard-campaigns-2024.png" alt="Dashboard, campaigns page, 2024" loading="lazy" /><figcaption>Campaigns, 2024.</figcaption></figure>
 </div>
 
-**The rewards engine.** Under every campaign is a model that has to answer: instant or deferred? Triggered by a purchase or something else? Paid as a Shopify discount, a static code, one from a list, or a custom reward by webhook? And who gets it, sender, receiver or both? I drew the whole tree so the developers and I were building the same thing, and so the campaign wizard could show only the choices that mattered at each step.
+**The rewards engine.** Every referral ends in a reward, and "reward" turns out to be a lot of decisions. Does the friend get it right away, or only after they buy? Is it a discount code, a fixed code, one from a list the store uploaded, or something custom from the store's own system? Does the person who shared get something too, or only the friend? Every combination had to work, so we mapped them all before building, and the campaign setup only asks a store the questions that apply to what they've already picked.
 
-<figure><img src="/images/work/prosper-platform/rewards-architecture.png" alt="The rewards engine diagram" loading="lazy" /><figcaption>The rewards engine, drawn for the developers.</figcaption></figure>
+<figure><img src="/images/work/prosper-platform/rewards-architecture.png" alt="The rewards engine diagram" loading="lazy" /><figcaption>The rewards engine.</figcaption></figure>
 
 **The Shopify app.** Prosper rebuilt to fit Shopify's native cart and checkout, generating a unique discount code per customer to prevent fraud, listed publicly on the App Store. With it came a Zapier app, custom domains for referral links, and a Docusaurus docs site, so a store could go from account to live campaign without talking to us.
 
