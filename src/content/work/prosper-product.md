@@ -3,7 +3,7 @@ title: "Prosper: two years designing a referral product"
 summary: "A referral flow that takes twenty seconds and lives on the product page, plus the dashboard and Shopify app that let a store run it without us."
 organization: "Prosper Technology Solutions"
 role: "Co-founder and CPO. Product design, specs, system diagrams, frontend, client placements."
-period: "2022–2024"
+period: "2021–2024"
 era: "2020–2023"
 areas: [Product, Design]
 tags: [startups, design]

@@ -3,7 +3,7 @@ title: "Prosper: the brand"
 summary: "Everything a two-year-old startup puts in front of the world: the identity, three versions of the website, 3D renders, a whitepaper, two pitch decks, client docs and the social feed."
 organization: "Prosper Technology Solutions"
 role: "Co-founder and CPO. Brand identity, web design and build, 3D, print, decks, social."
-period: "2022–2024"
+period: "2021–2024"
 era: "2020–2023"
 areas: [Design, Marketing]
 tags: [startups, design, marketing]
