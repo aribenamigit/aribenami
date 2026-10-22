@@ -40,13 +40,15 @@ We were seven. Dylan ran the company and the fundraising, Taha and Sachal sold, 
 
 It shipped and clients used it, and it had problems I could watch happening. Two-factor added friction. The steps looked alike. Nobody knew how far along they were. The buttons were too small on phones.
 
-**Second widget, 2023.** Designed from watching people get stuck in the first one. It opens as a slider that sits in the page instead of a panel. A progress bar runs across every step and each step has a title. Reward generation got a loading state. The buttons got big. Two sizes: compact for product pages, extended with more context up front, and the store picks. The design also planned for sharing beyond text, email and link, to WhatsApp, Slack, Instagram, Facebook and Reddit. We were still building that when things came to a halt, so the screens below are the documentation for where it was headed, not all of what shipped.
+**Second widget, 2023.** Designed from watching people get stuck in the first one. It opens as a slider that sits in the page instead of a panel. A progress bar runs across every step and each step has a title. Reward generation got a loading state. The buttons got big. Two sizes: compact for product pages, extended with more context up front. Each store chose which one to run. The design also planned for sharing beyond text, email and link, to WhatsApp, Slack, Instagram, Facebook and Reddit. We were still building that when things came to a halt, so the screens below are the documentation for where it was headed, not all of what shipped.
 
 <figure><img src="/images/work/prosper-widget/widget-v2-extended.png" alt="Second widget, extended version, every screen" loading="lazy" /><figcaption>Second widget, extended version, every screen.</figcaption></figure>
 
 <figure><img src="/images/work/prosper-widget/widget-v2-annotated.png" alt="Annotated changes between the two widgets" loading="lazy" /><figcaption>What changed and why.</figcaption></figure>
 
-**Placements.** The widget had to look native on every store, so for each client I built the placement: the product page button on B Draddy, Fairway & Greene and Takeya, the cart drawer on Unit 1, a dedicated referral page, the Shopify order-status page.
+**Placements.** A referral widget is a stranger on someone else's website. If it looks like a stranger, people treat it like one: a pop-up, an ad, something to close. So we made a call early. The widget would take on the store's fonts, colors and corners, with no Prosper branding on it at all. That was bad for our brand, since nobody who used it ever saw our name. It was good for the product, which is the trade a product company should make.
+
+For each client I built the placement by hand: the product page button on B Draddy, Fairway & Greene and Takeya, the cart drawer on Unit 1, a dedicated referral page, the Shopify order-status page.
 
 <div class="pair">
 <figure><img src="/images/work/prosper-widget/client-bdraddy-cart.jpg" alt="The widget in B Draddy's cart" loading="lazy" /><figcaption>B Draddy, cart.</figcaption></figure>
