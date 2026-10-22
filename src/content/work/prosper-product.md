@@ -70,7 +70,7 @@ For Home Means Nevada, a Reno retailer with physical stores, that meant printed 
 
 It has four parts. Widgets, where you design yours: pick colors, size and corners and watch it update live, so it matches your site without asking us. Campaigns, where you decide what the offer is ("give $25, get $25") and what the email or text to the friend says. Reports, where you see how many referrals went out, how many turned into sales, and what those sales were worth. And Team, for who else can log in.
 
-Team turned out to be the expensive one. Some of our customers were marketing agencies running several brands at once, and they needed each brand walled off from the others with its own people, while one person could still belong to all of them. That's a multi-tenant system, and it took a lot of developer hours that nobody sees on the screen.
+Team turned out to be the expensive one. Some of our customers were marketing agencies, or companies with several brands under one roof, and they needed each brand walled off from the others with its own people, while one person could still belong to all of them. That's a multi-tenant system, and it took a lot of developer hours that nobody sees on the screen.
 
 The 2023 version was dark. The 2024 version went light and simpler.
 
