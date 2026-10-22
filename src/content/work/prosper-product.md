@@ -46,7 +46,7 @@ It shipped and clients used it, and it had problems I could watch happening. Two
 
 <figure><img src="/images/work/prosper-widget/widget-v2-annotated.png" alt="Annotated changes between the two widgets" loading="lazy" /><figcaption>What changed and why.</figcaption></figure>
 
-**Placements.** A referral widget is a stranger on someone else's website. If it looks like a stranger, people treat it like one: a pop-up, an ad, something to close. So we made a call early. The widget would take on the store's fonts, colors and corners, with no Prosper branding on it at all. That was bad for our brand, since nobody who used it ever saw our name. It was good for the product, which is the trade a product company should make.
+**Placements.** A referral widget is a stranger on someone else's website. If it looks like a stranger, people treat it like one: a pop-up, an ad, something to close. So we made a call early. The widget would take on the store's fonts, colors and corners, with almost no Prosper branding on it. All we kept was a faint copyright line in the footer, there as a license and as a way for other retailers to find us, but never loud enough to compete with the store's page. That was bad for our brand, since almost nobody who used it noticed our name. It was good for the product, which is the trade a product company should make.
 
 For each client I built the placement by hand: the product page button on B Draddy, Fairway & Greene and Takeya, the cart drawer on Unit 1, a dedicated referral page, the Shopify order-status page.
 
