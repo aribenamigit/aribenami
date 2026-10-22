@@ -74,11 +74,11 @@ Team turned out to be the expensive one. Some of our customers were marketing ag
 
 The 2023 version was dark. The 2024 version went light and simpler.
 
-<figure><img src="/images/work/prosper-platform/dashboard-campaigns-figma.png" alt="Dashboard, campaigns page, 2023" loading="lazy" /><figcaption>Campaigns, 2023.</figcaption></figure>
+<figure><img src="/images/work/prosper-platform/dashboard-campaigns-figma.png" alt="Dashboard, campaigns page, 2023" loading="lazy" /><figcaption>Campaigns, 2023 design prototype.</figcaption></figure>
 
 <div class="pair">
 <figure><img src="/images/work/prosper-platform/dashboard-widget-wizard.png" alt="Widget creator with live preview" loading="lazy" /><figcaption>Widget creator.</figcaption></figure>
-<figure><img src="/images/work/prosper-platform/dashboard-reports.jpg" alt="Reports page" loading="lazy" /><figcaption>Reports.</figcaption></figure>
+<figure><img src="/images/work/prosper-platform/dashboard-reports.jpg" alt="Reports page" loading="lazy" /><figcaption>Reports, design prototype.</figcaption></figure>
 <figure><img src="/images/work/prosper-platform/email-template.png" alt="Email template with variables" loading="lazy" /><figcaption>Email template with variables.</figcaption></figure>
 <figure><img src="/images/work/prosper-platform/dashboard-campaigns-2024.png" alt="Dashboard, campaigns page, 2024" loading="lazy" /><figcaption>Campaigns, 2024.</figcaption></figure>
 </div>
