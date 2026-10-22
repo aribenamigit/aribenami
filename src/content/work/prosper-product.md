@@ -9,8 +9,8 @@ areas: [Product, Design]
 tags: [startups, design]
 featured: true
 order: 10
-cover: /images/work/prosper-widget/widget-v2-hero.png
-coverAlt: "Every screen of the second Prosper widget, compact and extended versions, from the Figma file"
+cover: /images/work/prosper-product/hero-widgets-over-chart.png
+coverAlt: "Prosper widget components floating over a referral chart"
 outcomes:
   - { value: "20 sec", label: "share to reward" }
   - { value: "60%", label: "of B Draddy referrals converted" }
@@ -27,9 +27,7 @@ Every referral tool we looked at in 2021 seemed built ten years earlier. Each on
 
 A referral has two sides. The customer sees a small widget: share with a friend, get a reward. The store sees everything that makes that widget work: where it goes on the site, what the reward is, who gets paid and when. Prosper had to be both. The widget came first. The tools for the store took the rest of the company's life.
 
-## Role
-
-I designed every version of the widget and the whole dashboard, wrote the specs and drew the system diagrams the developers built from, did the frontend on each client's store, and wrote the documentation site. Matt and Huseyin built the backend. Dylan and Sachal sold it.
+We were seven. Dylan ran the company and the fundraising, Taha and Sachal sold, and four of us built: Matt, Huseyin and Robert on the code, me on every piece of design, the specs the developers worked from, and the frontend prototypes I handed off for implementation.
 
 ## The widget
 
