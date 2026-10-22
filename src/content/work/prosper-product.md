@@ -25,7 +25,7 @@ Every referral tool we looked at in 2021 seemed built ten years earlier. Each on
 
 <figure><img src="/images/work/prosper-product/old-referral-tool-2021.png" alt="A typical referral tool dashboard from 2021" loading="lazy" /><figcaption>What the existing tools looked like in 2021.</figcaption></figure>
 
-That's the shopper's half. The store's half is everything that has to exist so the shopper's half can run on a site we've never seen: a dashboard, a rewards model, a Shopify app. For the first months we deployed by hand. The second half of the company was spent making that unnecessary.
+A referral has two sides. The customer sees a small widget: share with a friend, get a reward. The store sees everything that makes that widget work: where it goes on the site, what the reward is, who gets paid and when. Prosper had to be both. The widget came first. The tools for the store took the rest of the company's life.
 
 ## Role
 
