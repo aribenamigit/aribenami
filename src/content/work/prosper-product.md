@@ -66,7 +66,13 @@ For Home Means Nevada, a Reno retailer with physical stores, that meant printed 
 
 ## The platform
 
-**The dashboard.** Four things a store needs: Widgets, Campaigns, Reports, Team. The widget creator sets colors, sizing and corners against a live preview, so a store matches its own brand without us. Campaigns connect a widget to a reward and the email and SMS templates that carry it, with variables for the customer's name, the code and the store. Reports show referrals sent, clicks, conversions and revenue. The 2023 version shipped dark. The 2024 version went light and simpler.
+**The dashboard.** For the first year, every store that signed up got set up by us. We picked the colors, wrote the offer, installed it. That doesn't scale and it doesn't sell, so we built the place where a store does it themselves.
+
+It has four parts. Widgets, where you design yours: pick colors, size and corners and watch it update live, so it matches your site without asking us. Campaigns, where you decide what the offer is ("give $25, get $25") and what the email or text to the friend says. Reports, where you see how many referrals went out, how many turned into sales, and what those sales were worth. And Team, for who else can log in.
+
+Team turned out to be the expensive one. Some of our customers were marketing agencies running several brands at once, and they needed each brand walled off from the others with its own people, while one person could still belong to all of them. That's a multi-tenant system, and it took a lot of developer hours that nobody sees on the screen.
+
+The 2023 version was dark. The 2024 version went light and simpler.
 
 <figure><img src="/images/work/prosper-platform/dashboard-campaigns-figma.png" alt="Dashboard, campaigns page, 2023" loading="lazy" /><figcaption>Campaigns, 2023.</figcaption></figure>
 
