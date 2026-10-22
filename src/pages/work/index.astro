@@ -1,58 +1,25 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
-import { AREAS, ERAS } from '../../content.config';
 
-// One card per case study, newest era first, then by order. Filters narrow; they never duplicate.
+// One card per case study, newest era first, then by order.
 const all = (await getCollection('work', ({ data }) => !data.draft)).sort((a, b) => {
   if (a.data.era !== b.data.era) return a.data.era === '2024–now' ? -1 : 1;
   return a.data.order - b.data.order;
 });
 ---
-<Base title="Work" description="Case studies: design, product, marketing, strategy and analytics work, 2020 to now.">
+<Base title="Work" description="Case studies: things I designed, built, and then checked the numbers on.">
   <h1>Work</h1>
-
-  <div class="filters" role="group" aria-label="Filter by area">
-    <button type="button" data-area="all" aria-pressed="true">All</button>
-    {AREAS.map((a) => <button type="button" data-area={a} aria-pressed="false">{a}</button>)}
-  </div>
-  <div class="filters" role="group" aria-label="Filter by era">
-    {ERAS.map((e) => <button type="button" data-era={e} aria-pressed="false">{e}</button>)}
-  </div>
+  <p class="lede">Things I designed, built, and then checked the numbers on.</p>
 
   <div class="grid">
     {all.map((cs) => (
-      <a class="card" href={`/work/${cs.id}`} data-era={cs.data.era} data-areas={cs.data.areas.join(' ')}>
+      <a class="card" href={`/work/${cs.id}`}>
         {cs.data.cover && <img class="cover" src={cs.data.cover} alt="" loading="lazy" />}
         <div class="meta">{cs.data.organization} · {cs.data.period}</div>
         <h3>{cs.data.title}</h3>
         <p class="muted">{cs.data.summary}</p>
-        <div class="tags">{cs.data.areas.map((a) => <span class="tag">{a}</span>)}</div>
       </a>
     ))}
   </div>
-  <p class="muted" id="empty" hidden>Nothing here yet for that combination.</p>
-
-  <script>
-    const areaBtns = document.querySelectorAll<HTMLButtonElement>('button[data-area]');
-    const eraBtns = document.querySelectorAll<HTMLButtonElement>('button[data-era]');
-    const cards = document.querySelectorAll<HTMLElement>('.card[data-era]');
-    const empty = document.getElementById('empty')!;
-    let area = 'all';
-    let era: string | null = null;
-    const apply = () => {
-      let shown = 0;
-      cards.forEach((c) => {
-        const okArea = area === 'all' || (c.dataset.areas ?? '').split(' ').includes(area);
-        const okEra = !era || c.dataset.era === era;
-        c.hidden = !(okArea && okEra);
-        if (!c.hidden) shown++;
-      });
-      empty.hidden = shown > 0;
-      areaBtns.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.area === area)));
-      eraBtns.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.era === era)));
-    };
-    areaBtns.forEach((b) => b.addEventListener('click', () => { area = b.dataset.area ?? 'all'; apply(); }));
-    eraBtns.forEach((b) => b.addEventListener('click', () => { era = era === b.dataset.era ? null : (b.dataset.era ?? null); apply(); }));
-  </script>
 </Base>

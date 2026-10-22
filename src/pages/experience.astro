@@ -2,35 +2,30 @@
 import Base from '../layouts/Base.astro';
 import { site } from '../data/site';
 
-// Every role links to its case studies once they exist. Links to drafts are omitted until published.
 const roles = [
   {
     years: '2024–now',
     title: 'Marketing Manager',
     org: 'Grass Valley Provisions, Grass Valley CA',
     text: 'The whole marketing department: budget, brand, campaigns, pricing, loyalty, sponsorships, website, in-store screens, and the numbers.',
-    links: [{ href: '/work/gvp-tv-menu', label: 'TV menus' }, { href: '/work/gvp-strain-cards', label: 'Strain cards' }],
   },
   {
     years: '2021–now',
     title: 'Consultant',
     org: 'Independent',
     text: 'Brand and product for other businesses and startups.',
-    links: [],
   },
   {
     years: '2021–2024',
     title: 'Co-founder & Chief Product Officer',
     org: 'Prosper Technology Solutions',
     text: 'Designed and shipped a venture-funded referral marketing product for Shopify stores, leading 3 designers and 4 developers.',
-    links: [{ href: '/work/prosper-widget', label: 'Widget' }, { href: '/work/prosper-platform', label: 'Platform' }, { href: '/work/prosper-brand', label: 'Brand' }, { href: '/writing/designing-and-developing-prosper', label: 'Post' }],
   },
   {
     years: '2021–2022',
     title: 'Graphic Designer',
     org: 'Modernistic, Stillwater MN',
     text: 'First in-house graphic designer at a print manufacturer serving Fortune 500 clients, hired during its rebrand.',
-    links: [{ href: '/work/modernistic', label: 'Case study' }],
   },
 ];
 ---
@@ -45,9 +40,6 @@ const roles = [
         <div>
           <strong>{r.title}</strong>, {r.org}
           <p>{r.text}</p>
-          {r.links.length > 0 && (
-            <p class="muted">{r.links.map((l, i) => <>{i > 0 && ' · '}<a href={l.href}>{l.label}</a></>)}</p>
-          )}
         </div>
       </li>
     ))}
