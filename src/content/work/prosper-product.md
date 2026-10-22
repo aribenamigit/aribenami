@@ -40,7 +40,7 @@ We were seven. Dylan ran the company and the fundraising, Taha and Sachal sold, 
 
 It shipped and clients used it, and it had problems I could watch happening. Two-factor added friction. The steps looked alike. Nobody knew how far along they were. The buttons were too small on phones.
 
-**Second widget, 2023.** Designed from watching people get stuck in the first one. It opens as a slider that sits in the page instead of a panel. A progress bar runs across every step and each step has a title. Sharing grew from text, email and link to WhatsApp, Slack, Instagram, Facebook and Reddit. Reward generation got a loading state. The buttons got big. Two sizes shipped: compact for product pages, extended with more context up front, and the store picks.
+**Second widget, 2023.** Designed from watching people get stuck in the first one. It opens as a slider that sits in the page instead of a panel. A progress bar runs across every step and each step has a title. Reward generation got a loading state. The buttons got big. Two sizes: compact for product pages, extended with more context up front, and the store picks. The design also planned for sharing beyond text, email and link, to WhatsApp, Slack, Instagram, Facebook and Reddit. We were still building that when things came to a halt, so the screens below are the documentation for where it was headed, not all of what shipped.
 
 <figure><img src="/images/work/prosper-widget/widget-v2-extended.png" alt="Second widget, extended version, every screen" loading="lazy" /><figcaption>Second widget, extended version, every screen.</figcaption></figure>
 
