@@ -11,20 +11,9 @@ const { Content } = await render(entry);
 const d = entry.data;
 ---
 <Base title={d.title} description={d.summary}>
-  <p class="muted">{d.organization} · {d.period} · {d.areas.join(', ')}</p>
+  <p class="muted">{d.organization} · {d.period}</p>
   <h1>{d.title}</h1>
   <p class="lede">{d.summary}</p>
-  <p class="muted">Role: {d.role}</p>
-  {d.outcomes.length > 0 && (
-    <div class="stats">
-      {d.outcomes.map((o) => (
-        <div><strong>{o.value}</strong><span>{o.label}</span></div>
-      ))}
-    </div>
-  )}
-  <div class="tags">
-    {d.tags.map((t) => <a class="tag" href={`/writing?tag=${t}`}>{t}</a>)}
-  </div>
   {d.cover && <img class="hero" src={d.cover} alt={d.coverAlt ?? ""} />}
   <article class="prose">
     <Content />
