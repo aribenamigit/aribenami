@@ -7,7 +7,7 @@ export const site = {
   linkedin: 'https://www.linkedin.com/in/aribenami/',
   github: '', // optional
   location: 'Grass Valley, California',
-  now: 'Marketing Director at Grass Valley Provisions. Advising an early-stage team on brand and product. Building this site.', // "Now" block, update monthly
+  now: 'Marketing Manager at Grass Valley Provisions. Advising an early-stage team on brand and product. Building this site.', // "Now" block, update monthly
   nowUpdated: 'October 2026',
 };
 
