@@ -1,5 +1,5 @@
 ---
-title: "Prosper: brand, website and the materials that sold it"
+title: "Prosper: the brand"
 summary: "Everything a two-year-old startup puts in front of the world: the identity, three versions of the website, 3D renders, a whitepaper, two pitch decks, client docs and the social feed."
 organization: "Prosper Technology Solutions"
 role: "Co-founder and CPO. Brand identity, web design and build, 3D, print, decks, social."
@@ -8,7 +8,7 @@ era: "2020–2023"
 areas: [Design, Marketing]
 tags: [startups, design, marketing]
 featured: false
-order: 14
+order: 12
 cover: /images/work/prosper-brand/website-v3-splash.png
 coverAlt: "Prosper brand composition: widget variants over a referral chart"
 outcomes: []
@@ -20,7 +20,7 @@ A startup's brand has one job: make a new kind of product understandable to some
 
 ## Role
 
-All of it, from the logo to the last LinkedIn post. The website I designed and built myself, three times.
+All of it, from the logo to the last LinkedIn post. The website I designed and built myself, three times. The product itself is [its own case study](/work/prosper-product).
 
 ## What I built
 

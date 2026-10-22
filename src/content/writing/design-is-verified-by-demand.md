@@ -26,13 +26,7 @@ Designers who think their job ends at the interface are leaving the most importa
 
 ## Necessary, not sufficient
 
-Prosper is my example, because I designed both halves and only one of them passed.
-
-The product passed the demand test. Stores installed it, customers used it, referrals converted at rates that made marketing directors call us back. One client made more in 30 days than his old tools had in three years, and said so.
-
-The business model didn't pass. We priced it at $25 a month plus 75 cents a referral. That client's 30-day pilot made him about $6,300 and paid us $72. The widget was verified by demand. The pricing never was, because we never put a real price in front of a customer and watched what happened. Then the 2024 funding market stopped funding anything that wasn't AI, and a company that captured $72 of every $6,300 it created had no way to survive it.
-
-I don't blame the model for the ending. The market did that. But passing the demand test on the product and skipping it on the business model is how a product that worked ends up as a company that didn't.
+I know this because I designed both halves of a startup and only one passed. The product was verified by demand: stores installed it, customers used it, referrals converted. The pricing never was, because we never put a real price in front of a customer and watched what happened. [That story is here.](/writing/designing-and-developing-prosper) Passing the demand test on the product and skipping it on the business model is how a product that worked ends up as a company that didn't.
 
 ## What I do now
 

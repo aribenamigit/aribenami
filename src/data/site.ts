@@ -15,6 +15,5 @@ export const nav = [
   { href: '/work', label: 'Work' },
   { href: '/writing', label: 'Writing' },
   { href: '/experience', label: 'Experience' },
-  // Services is built but unlisted at launch. Add { href: '/services', label: 'Services' } when there is capacity.
   { href: '/about', label: 'About' },
 ];

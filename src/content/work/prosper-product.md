@@ -1,0 +1,74 @@
+---
+title: "Prosper: the product"
+summary: "A referral flow that takes twenty seconds and lives on the product page, plus the dashboard and Shopify app that let a store run it without us. Two widgets, one platform, ten client stores."
+organization: "Prosper Technology Solutions"
+role: "Co-founder and CPO. Product design, specs, system diagrams, frontend, client placements."
+period: "2022–2024"
+era: "2020–2023"
+areas: [Product, Design]
+tags: [startups, design]
+featured: true
+order: 10
+cover: /images/work/prosper-widget/widget-v2-hero.png
+coverAlt: "Every screen of the second Prosper widget, compact and extended versions, from the Figma file"
+outcomes:
+  - { value: "20 sec", label: "share to reward" }
+  - { value: "60%", label: "of B Draddy referrals converted" }
+  - { value: "$1.90", label: "cost per acquired customer, B Draddy pilot" }
+---
+
+## Context
+
+Every referral tool we looked at in 2021 lived in a pop-up and asked the customer to create an account, download an app, or wait for a friend to buy. Prosper's bet was that a referral should take twenty seconds and happen where the customer already is: on the product page, in the cart, after checkout.
+
+That's the shopper's half. The store's half is everything that has to exist so the shopper's half can run on a site we've never seen: a dashboard, a rewards model, a Shopify app. For the first months we deployed by hand. The second half of the company was spent making that unnecessary.
+
+## Role
+
+I designed every version of the widget and the whole dashboard, wrote the specs and drew the system diagrams the developers built from, did the frontend on each client's store, and wrote the documentation site. Matt and Huseyin built the backend. Dylan and Sachal sold it.
+
+## The widget
+
+**MVP, October 2022.** Verify with a phone number or email, choose text, email or link, get a reward code immediately. I handed it to the developers with an 18-page spec: responsive widths, the two-factor flow, invalid-input states, the exact copy, the Figma variables for theming. It shipped and clients used it, and it had problems I could watch happening. Two-factor added friction. The steps looked alike. Nobody knew how far along they were. The buttons were too small on phones.
+
+**Second widget, 2023.** Designed from watching people get stuck in the first one. It opens as a slider that sits in the page instead of a panel. A progress bar runs across every step and each step has a title. Sharing grew from text, email and link to WhatsApp, Slack, Instagram, Facebook and Reddit. Reward generation got a loading state. The buttons got big. Two sizes shipped: compact for product pages, extended with more context up front, and the store picks.
+
+**Placements.** The widget had to look native on every store, so for each client I built the placement: the product page button on B Draddy, Fairway & Greene and Takeya, the cart drawer on Unit 1, a dedicated referral page, the Shopify order-status page. For Home Means Nevada, a Reno retailer with physical stores, that meant printed QR signs at the checkout counter and a referral text that landed in the friend's phone.
+
+## The platform
+
+**The dashboard.** Four things a store needs: Widgets, Campaigns, Reports, Team. The widget creator sets colors, sizing and corners against a live preview, so a store matches its own brand without us. Campaigns connect a widget to a reward and the email and SMS templates that carry it, with variables for the customer's name, the code and the store. Reports show referrals sent, clicks, conversions and revenue. The 2023 version shipped dark. The 2024 version went light and simpler.
+
+**The rewards engine.** Under every campaign is a model that has to answer: instant or deferred? Triggered by a purchase or something else? Paid as a Shopify discount, a static code, one from a list, or a custom reward by webhook? And who gets it, sender, receiver or both? I drew the whole tree so the developers and I were building the same thing, and so the campaign wizard could show only the choices that mattered at each step.
+
+**The Shopify app.** Prosper rebuilt to fit Shopify's native cart and checkout, generating a unique discount code per customer to prevent fraud, listed publicly on the App Store. With it came a Zapier app, custom domains for referral links, and a Docusaurus docs site, so a store could go from account to live campaign without talking to us.
+
+## Outcome
+
+Deployed on B Draddy, Fairway & Greene, Takeya, Thermoflask, Home Means Nevada, Ponto, Carico, Unit 1, Ade Dehye and Handful. B Draddy's 30-day pilot: 63 referrals, 38 conversions, about $6,300 in revenue, $1.90 per acquired customer. Their CMO said it drove more revenue in a month than his old tools had in three years. Across the beta, 86 businesses signed up and roughly a quarter of discounts given out became a sale. Deployment went from a manual install by us to a self-serve flow measured in minutes.
+
+## Lesson
+
+The first widget was designed from what I thought a referral should be. The second was designed from watching people get stuck in the first, and it took a year of shipping to earn it. The dashboard is what turned a service into a product. What happened to the company after that is [a different story](/writing/designing-and-developing-prosper).
+
+## Images
+
+<div class="gallery">
+<figure><img src="/images/work/prosper-widget/widget-mvp-phone.png" alt="The MVP widget on a phone" loading="lazy" /><figcaption>The MVP, October 2022.</figcaption></figure>
+<figure><img src="/images/work/prosper-widget/widget-ui-spec-pages.png" alt="Pages from the UI spec" loading="lazy" /><figcaption>From the 18-page UI spec for the developers. <a href="/files/prosper-widget-ui-spec-2022.pdf">Full PDF</a>.</figcaption></figure>
+<figure><img src="/images/work/prosper-widget/widget-v2-extended.png" alt="Second widget, extended version, every screen" loading="lazy" /><figcaption>Second widget, extended version, every screen.</figcaption></figure>
+<figure><img src="/images/work/prosper-widget/widget-v2-annotated.png" alt="Annotated changes between the two widgets" loading="lazy" /><figcaption>What changed and why.</figcaption></figure>
+<figure><img src="/images/work/prosper-widget/widget-components-spread.png" alt="Widget variants and brand themes" loading="lazy" /><figcaption>Variants and brand themes.</figcaption></figure>
+<figure><img src="/images/work/prosper-widget/client-bdraddy-cart.jpg" alt="The widget in B Draddy's cart" loading="lazy" /><figcaption>B Draddy, cart.</figcaption></figure>
+<figure><img src="/images/work/prosper-widget/widget-live-takeya-laptop.png" alt="The widget on Takeya's product page" loading="lazy" /><figcaption>Takeya, product page.</figcaption></figure>
+<figure><img src="/images/work/prosper-widget/client-unit1-cart-drawer.jpg" alt="The widget in Unit 1's cart drawer" loading="lazy" /><figcaption>Unit 1, cart drawer.</figcaption></figure>
+<figure><img src="/images/work/prosper-widget/client-hmn-checkout-sign.jpg" alt="QR referral sign at a checkout counter" loading="lazy" /><figcaption>Home Means Nevada, checkout counter sign.</figcaption></figure>
+<figure><img src="/images/work/prosper-widget/home-means-nevada-sms-referral.jpg" alt="The referral text message a friend receives" loading="lazy" /><figcaption>What the friend receives.</figcaption></figure>
+<figure><img src="/images/work/prosper-platform/dashboard-campaigns-figma.png" alt="Dashboard, campaigns page, 2023" loading="lazy" /><figcaption>Campaigns, 2023.</figcaption></figure>
+<figure><img src="/images/work/prosper-platform/dashboard-widget-wizard.png" alt="Widget creator with live preview" loading="lazy" /><figcaption>Widget creator.</figcaption></figure>
+<figure><img src="/images/work/prosper-platform/dashboard-reports.jpg" alt="Reports page" loading="lazy" /><figcaption>Reports.</figcaption></figure>
+<figure><img src="/images/work/prosper-platform/dashboard-campaigns-2024.png" alt="Dashboard, campaigns page, 2024" loading="lazy" /><figcaption>Campaigns, 2024.</figcaption></figure>
+<figure><img src="/images/work/prosper-platform/rewards-architecture.png" alt="The rewards engine diagram" loading="lazy" /><figcaption>The rewards engine, drawn for the developers.</figcaption></figure>
+<figure><img src="/images/work/prosper-platform/email-template.png" alt="Email template with variables" loading="lazy" /><figcaption>Email template with variables.</figcaption></figure>
+<figure><img src="/images/work/prosper-platform/shopify-app-store-listing.png" alt="Shopify App Store listing" loading="lazy" /><figcaption>Shopify App Store listing.</figcaption></figure>
+</div>
