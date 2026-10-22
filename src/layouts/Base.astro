@@ -49,5 +49,23 @@ const path = Astro.url.pathname.replace(/\/$/, '') || '/';
         <span class="muted">{site.location}</span>
       </div>
     </footer>
+    <div id="lightbox" hidden><img alt="" /><p id="lightbox-cap"></p></div>
+    <script>
+      const box = document.getElementById('lightbox')!;
+      const boxImg = box.querySelector('img')!;
+      const boxCap = document.getElementById('lightbox-cap')!;
+      document.querySelectorAll<HTMLImageElement>('main figure img, main img.hero').forEach((img) => {
+        img.addEventListener('click', () => {
+          boxImg.src = img.src;
+          boxImg.alt = img.alt;
+          boxCap.textContent = img.closest('figure')?.querySelector('figcaption')?.textContent ?? '';
+          box.hidden = false;
+          document.body.style.overflow = 'hidden';
+        });
+      });
+      const close = () => { box.hidden = true; document.body.style.overflow = ''; };
+      box.addEventListener('click', close);
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+    </script>
   </body>
 </html>

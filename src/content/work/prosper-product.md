@@ -23,6 +23,8 @@ In 2020 I ran a clothing brand while I was still in school. We learned fast that
 
 Every referral tool we looked at in 2021 seemed built ten years earlier. Each one lived in a pop-up and asked the customer to create an account, download an app, or wait for a friend to buy. Prosper's bet was that a referral should take twenty seconds and happen where the customer already is: on the product page, in the cart, after checkout.
 
+<figure><img src="/images/work/prosper-product/old-referral-tool-2021.png" alt="A typical referral tool dashboard from 2021" loading="lazy" /><figcaption>What the existing tools looked like in 2021.</figcaption></figure>
+
 That's the shopper's half. The store's half is everything that has to exist so the shopper's half can run on a site we've never seen: a dashboard, a rewards model, a Shopify app. For the first months we deployed by hand. The second half of the company was spent making that unnecessary.
 
 ## Role
