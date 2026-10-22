@@ -8,52 +8,36 @@ const roles = [
     years: '2024–now',
     title: 'Marketing Director',
     org: 'Grass Valley Provisions, Grass Valley CA',
-    text: 'Own brand, web, mobile app, discount and pricing strategy, vendor credit program, analytics, merch, events and community for a 5,000-SKU independent dispensary. Built the store\'s analytics layer on Dutchie POS. Launched loyalty tiers, referral program, kiosk, curbside, radio, direct mail.',
-    links: [],
+    text: 'The whole marketing department: budget, brand, campaigns, pricing, loyalty, sponsorships, website, in-store screens, and the numbers.',
+    links: [{ href: '/work/gvp-tv-menu', label: 'TV menus' }, { href: '/work/gvp-strain-cards', label: 'Strain cards' }],
   },
   {
-    years: '2024–now',
+    years: '2021–now',
     title: 'Consultant',
     org: 'Independent',
-    text: 'Brand, packaging and product design for cannabis brands and early-stage teams.',
+    text: 'Brand and product for other businesses and startups.',
     links: [],
   },
   {
-    years: '2021–2023',
+    years: '2021–2024',
     title: 'Co-founder & Chief Product Officer',
     org: 'Prosper Technology Solutions',
-    text: 'Designed and shipped a referral-marketing widget, dashboard and public Shopify app. Led 3 designers and 4 developers. gener8tor Reno Tahoe first cohort, $100k raised. Clients included B Draddy, Takeya, Thermoflask, Home Means Nevada, Ponto.',
+    text: 'Designed and shipped a venture-funded referral marketing product for Shopify stores, leading 3 designers and 4 developers.',
     links: [{ href: '/work/prosper-widget', label: 'Widget' }, { href: '/work/prosper-platform', label: 'Platform' }, { href: '/work/prosper-brand', label: 'Brand' }, { href: '/writing/designing-and-developing-prosper', label: 'Post' }],
   },
   {
     years: '2021–2022',
     title: 'Graphic Designer',
     org: 'Modernistic, Stillwater MN',
-    text: 'First in-house graphic designer, hired during a rebrand. Print system, sell sheets, sustainability report, packaging, illustrated mural. Fortune 500 client base.',
+    text: 'First in-house graphic designer at a print manufacturer serving Fortune 500 clients, hired during its rebrand.',
     links: [{ href: '/work/modernistic', label: 'Case study' }],
   },
-  {
-    years: '2020–2021',
-    title: 'Founder & Creative Director',
-    org: 'MEDIA IMMUNE Clothing',
-    text: 'Launched a clothing brand while in school: brand, product, logistics, social, web.',
-    links: [],
-  },
-];
-
-const skills = [
-  { k: 'Design', v: 'Figma, Adobe Creative Suite, brand systems, packaging and dielines, illustration, print production' },
-  { k: 'Build', v: 'HTML/CSS/JS, React, Astro, Webflow, Shopify, GitHub, AI-assisted development (Claude, Claude Code)' },
-  { k: 'Marketing', v: 'Email (Klaviyo, SendGrid), SMS (Twilio), loyalty program design, SEO, radio and direct mail, sponsorships' },
-  { k: 'Operations and analysis', v: 'Dutchie POS and API, discount strategy, vendor credit reconciliation, Excel and Google Sheets modeling, DCC market data' },
-  { k: 'Languages', v: 'English, Hebrew' },
 ];
 ---
-<Base title="Experience" description="Ari Ben-Ami: Design Engineer. Marketing Director at Grass Valley Provisions, former co-founder and CPO at Prosper.">
+<Base title="Experience" description="Ari Ben-Ami: Marketing Director at Grass Valley Provisions, former co-founder and CPO at Prosper.">
   <h1>Experience</h1>
   <p class="lede">{site.name}. {site.location}.</p>
 
-  <h2>Experience</h2>
   <ul class="timeline">
     {roles.map((r) => (
       <li>
@@ -73,17 +57,7 @@ const skills = [
   <ul class="timeline">
     <li>
       <div class="years">2018–2022</div>
-      <div><strong>BFA Graphic Design & Interactive Media</strong>, Communication Design concentration<p>University of Wisconsin-Stout</p></div>
+      <div><strong>BFA Graphic Design & Interactive Media</strong><p>University of Wisconsin-Stout</p></div>
     </li>
   </ul>
-
-  <h2>Skills</h2>
-  <dl class="skills">
-    {skills.map((s) => (
-      <div><dt>{s.k}</dt><dd>{s.v}</dd></div>
-    ))}
-  </dl>
-
-  <h2>Contact</h2>
-  <p><a href={`mailto:${site.email}`}>{site.email}</a> · <a href={site.linkedin}>LinkedIn</a></p>
 </Base>
